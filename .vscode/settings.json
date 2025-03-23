@@ -1,0 +1,3 @@
+{
+	"python.analysis.extraPaths": ["./src/openai_agents_apps"]
+}
