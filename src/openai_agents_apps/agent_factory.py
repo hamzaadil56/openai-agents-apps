@@ -18,9 +18,10 @@ def create_history_tutor():
     )
 
 
-def web_search_agent():
+def web_search_agent(model: str):
     """Create and return a web search agent"""
     return Agent(
+        model=model,
         name="Web Search Agent",
         handoff_description="Specialist agent for searching the web and returning the best resources from the internet.",
         instructions="You provide assistance with web searches. Return the best resources from the internet.",

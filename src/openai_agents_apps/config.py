@@ -28,6 +28,7 @@ def get_gemini_client():
 
 def create_model(client, model_name="gemini-2.0-flash"):
     """Create a model instance with the specified client and model name"""
+
     return OpenAIChatCompletionsModel(
         model=model_name,
         openai_client=client

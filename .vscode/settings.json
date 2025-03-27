@@ -1,3 +1,6 @@
 {
-	"python.analysis.extraPaths": ["./src/openai_agents_apps"]
+	"python.analysis.extraPaths": [
+		"./src/openai_agents_apps",
+		"./src/openai_agents_apps/smm_agent"
+	]
 }
