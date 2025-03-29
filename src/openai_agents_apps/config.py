@@ -5,6 +5,9 @@ from agents import OpenAIChatCompletionsModel, AsyncOpenAI
 from agents.run import RunConfig
 
 
+
+
+
 def load_environment():
     """Load environment variables from .env file"""
     load_dotenv()
