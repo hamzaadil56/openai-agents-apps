@@ -1,16 +1,16 @@
 from agents import Agent, FileSearchTool, Runner, WebSearchTool
+from custom_tools import search_internet
 
 
 def market_research_agent():
     """Create and returns a market and audience research agent using various tools"""
     return Agent(
-        name="Market Research Agent",
-        instructions="You provide market and audience research on a topic. You can use the web search tool to find information on the topic.",
-        tools=[
-            WebSearchTool()
-        ],
-        handoff_description="Specialist agent for market and audience research"
+        name="Market & Audience Research Agent",
+        instructions="You are a Market & Audience Research Agent who can conduct a comprehensive market and competitor analysis. You can audit the current brand presence and sentiment. You can develop detailed audience personas by gathering demographic, psychographic, and behavioral data.",
+        tools=[search_internet],
     )
+
+
 def strategic_planning_kpi_agent():
     """Create and return a strategic planning and KPI agent for social media management"""
     return Agent(
@@ -37,6 +37,7 @@ def content_creation_curation_agent():
         ],
         handoff_description="Specialist agent for content creation and curation in social media"
     )
+
 
 def community_engagement_management_agent():
     """Create and return a community engagement and management agent for social media"""
