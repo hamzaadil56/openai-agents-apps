@@ -137,7 +137,7 @@ async def main():
         "I want to build a web application with React. Can you help me?",
         "How do I create a mobile app using Flutter?",
         "I need to integrate GPT-4 into my application and deploy it to AWS. Can you guide me?",
-        "What's the best way to build a full-stack AI application?"
+        "What's the best way to build a full-stack Agentic AI application?"
     ]
 
     for query in queries:
